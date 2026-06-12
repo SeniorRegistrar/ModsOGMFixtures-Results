@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+const d = new Date();
+const day = d.getDay();
+const diff = day === 0 ? -6 : 1 - day;
+
+d.setDate(d.getDate() + diff);
+d.setHours(16,0,0,0);
+
+window.location.replace(
+  "https://comp.teamstar.team/club-fixtures/hwa?club=1701318882287x702455929864645800&date=" +
+  encodeURIComponent(d.toISOString())
+);
+</script>
+</head>
+<body>
+Redirecting...
+</body>
+</html>
