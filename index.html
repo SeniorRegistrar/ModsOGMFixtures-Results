@@ -11,11 +11,8 @@ d.setHours(16,0,0,0);
 
 window.location.replace(
   "https://comp.teamstar.team/club-fixtures/hwa?club=1701318882287x702455929864645800&date=" +
-  encodeURIComponent(
-  d.getFullYear() + '-' +
-  String(d.getMonth() + 1).padStart(2, '0') + '-' +
-  String(d.getDate()).padStart(2, '0')
-)
+ encodeURIComponent(d.toISOString()) +
+  "&t=" + Date.now()
 );
 </script>
 </head>
